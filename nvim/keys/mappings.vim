@@ -54,7 +54,10 @@ nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
-" FZF
-nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <Leader>b :Buffers<CR>
-nnoremap <silent> <Leader>f :Rg<CR>
+" Find files using Telescope command-line sugar.
+" let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
+
+nnoremap <silent>fb <cmd>Telescope buffers<cr>
+nnoremap <silent>fh <cmd>Telescope help_tags<cr>
+nnoremap <silent>ff <cmd>Telescope git_files<cr>
+nnoremap <silent>fg <cmd>Telescope live_grep<cr>

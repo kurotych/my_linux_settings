@@ -28,12 +28,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Solidity syntax
     Plug 'tomlion/vim-solidity'
  
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 
     Plug 'tpope/vim-commentary'
 
     Plug 'jiangmiao/auto-pairs'
+
+    " Replacer
+    Plug 'brooth/far.vim'
 call plug#end()
