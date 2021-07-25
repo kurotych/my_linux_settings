@@ -61,3 +61,6 @@ nnoremap <silent>fb <cmd>Telescope buffers<cr>
 nnoremap <silent>fh <cmd>Telescope help_tags<cr>
 nnoremap <silent>ff <cmd>Telescope git_files<cr>
 nnoremap <silent>fg <cmd>Telescope live_grep<cr>
+
+" Binding for custom functions
+nnoremap <silent>cb <cmd>CloseHiddenBuffers <cr>
