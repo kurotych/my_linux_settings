@@ -55,12 +55,13 @@ nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
 " Find files using Telescope command-line sugar.
-" let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
+let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
 
 nnoremap <silent>fb <cmd>Telescope buffers<cr>
 nnoremap <silent>fh <cmd>Telescope help_tags<cr>
 nnoremap <silent>ff <cmd>Telescope git_files<cr>
 nnoremap <silent>fg <cmd>Telescope live_grep<cr>
+nnoremap <expr> fg ':Telescope live_grep cwd='.FindRootDirectory().'/<cr>'
 
 " Binding for custom functions
 nnoremap <silent>cb <cmd>CloseHiddenBuffers <cr>

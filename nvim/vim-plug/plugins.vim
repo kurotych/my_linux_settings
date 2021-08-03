@@ -38,4 +38,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Replacer
     Plug 'brooth/far.vim'
+
+    Plug 'airblade/vim-rooter'
 call plug#end()
