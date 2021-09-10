@@ -1,6 +1,7 @@
 [global_config]
 [keybindings]
   full_screen = None
+  layout_launcher = ""
 [profiles]
   [[default]]
     background_color = "#1d2837"
